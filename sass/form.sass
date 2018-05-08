@@ -1,0 +1,207 @@
+@import compass/css3
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700')
+
+$black: #000
+$gray: #9ea3a4
+$green: #44bb6d
+$orange: #f06322
+
+$primary: $green !default
+$primary-md: darken($primary, 10%) !default
+$secondary: $orange
+$secondary-md: darken($secondary, 10%) !default
+
+// -------------------------- COMMON --------------------------------------------------
+
+// extendables
+.uppercase
+  text-transform: uppercase
+  letter-spacing: 1px
+
+// common
+body
+  font-family: "Work Sans", Helvetica, Arial, sans-serif
+  background: #e3e3e3
+  color: #444
+  font-size: 14px
+
+p, ul, li
+  color: #666
+  line-height: 1.5em
+
+img
+  max-width: 100%
+
+a
+  color: $primary
+  cursor: pointer
+  &:hover
+    color: $primary-md
+    text-decoration: none
+
+h1
+  color: $primary
+  font-size: 36px
+  font-weight: normal
+  margin: 0 0 40px
+
+select, input[type="text"], input[type="tel"], input[type="email"]
+  border: 1px solid #ccc
+  border-radius: 0
+  padding: 5px 10px
+  box-sizing: border-box
+  font-family: "Rubik", Helvetica, Arial, sans-serif
+  font-size: 21px
+  width: 100%
+  margin-bottom: 30px
+  border-width: 0 0 1px 0
+  border-bottom: 1px solid #444
+
+select:-moz-focusring
+  outline: none
+  color: transparent
+  text-shadow: 0 0 0 #000
+
+.container
+  width: 100%
+  max-width: 100%
+  padding: 0
+
+.row-inset
+  max-width: 1000px
+  margin: auto
+  padding: 0 15px
+
+// header
+.header
+  background: white
+  color: white
+  padding-top: 15px
+  padding-bottom: 15px
+  text-align: center
+  overflow: hidden
+  .header-brand a
+    background-image: url('../images/rent2ownadvisor-logo.png')
+    background-repeat: no-repeat
+    display: block
+    float: left
+    margin: auto
+    width: 307px
+    height: 44px
+    text-indent: -9999px
+    margin-right: 10px
+  p
+    color: $primary
+    font-size: 18px
+    float: right
+    margin-top: 10px
+
+// form
+.form-container
+  background: white
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+  border-radius: 2px
+  margin-top: 30px
+  .form-body
+    padding: 20px 20px 60px
+    max-width: 900px
+    margin: auto
+
+.ll
+  a
+    color: $primary
+    cursor: pointer
+    &:hover
+      color: $primary-md
+      text-decoration: none
+
+  h1
+    color: $primary
+    font-size: 36px
+    font-weight: normal
+    margin: 0 0 40px
+
+  select, input[type="text"], input[type="tel"], input[type="email"]
+    border: 1px solid #ccc
+    border-radius: 0
+    padding: 5px 10px
+    box-sizing: border-box
+    font-family: "Rubik", Helvetica, Arial, sans-serif
+    font-size: 21px
+    width: 100%
+    margin-bottom: 30px
+    border-width: 0 0 1px 0
+    border-bottom: 1px solid #444
+
+  select:-moz-focusring
+    outline: none
+    color: transparent
+    text-shadow: 0 0 0 #000
+
+  .progress
+    height: 8px
+    border-radius: 0
+    background: none
+    .progress-bar
+      border-radius: 0
+      background: $primary
+
+  .btn, .btn-primary
+    font-weight: normal
+    letter-spacing: 1px
+    color: white
+    font-size: 21px !important
+    padding: 12px 30px !important
+    background: $secondary !important
+    border: none !important
+    border-radius: 5px
+    white-space: normal
+    cursor: pointer
+    text-shadow: rgba(0,0,0,0.2) 0 -1px 0
+    margin: 20px 0
+    &:hover
+      color: white
+      background: $secondary-md !important
+      text-shadow: rgba(0,0,0,0.6) 0 -1px 0
+      top: 1px
+      position: relative
+
+  .disclaimer
+    font-size: 12px
+    line-height: 20px
+
+  label
+    font-size: 12px
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: #999
+    display: block
+    font-weight: normal
+
+
+.footer
+  clear: both
+  overflow: auto
+  padding: 30px 0
+  text-align: center
+  p
+    color: #999
+    text-align: center
+
+//////////////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////
+
+@media (max-width: 768px)
+  .header
+    .header-brand a
+      max-width: 320px
+      margin: auto
+      float: none
+      background-size: contain
+    p
+      float: none
+      margin: auto
+  .row-inset
+    padding: 0 20px
+  .form-container
+    margin: 0 -20px
+    border-radius: 0

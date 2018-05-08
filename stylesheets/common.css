@@ -1,0 +1,818 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600,800");
+/* line 20, ../sass/common.sass */
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 25, ../sass/common.sass */
+body {
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  background: white;
+  color: #444;
+  font-size: 14px;
+}
+
+/* line 31, ../sass/common.sass */
+p, ul, li {
+  color: #666;
+  line-height: 1.5em;
+}
+
+/* line 35, ../sass/common.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 38, ../sass/common.sass */
+li {
+  line-height: 1.5em;
+}
+
+/* line 41, ../sass/common.sass */
+a {
+  color: #552d90;
+  cursor: pointer;
+}
+/* line 44, ../sass/common.sass */
+a:hover {
+  color: #3e2169;
+  text-decoration: none;
+}
+
+/* line 48, ../sass/common.sass */
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+/* line 53, ../sass/common.sass */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #552d90;
+}
+
+/* line 59, ../sass/common.sass */
+h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+/* line 63, ../sass/common.sass */
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 67, ../sass/common.sass */
+select, input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* line 75, ../sass/common.sass */
+.left {
+  float: left;
+}
+
+/* line 78, ../sass/common.sass */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* line 83, ../sass/common.sass */
+.row-inset {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* line 89, ../sass/common.sass */
+.content > div {
+  margin-bottom: 40px;
+  clear: both;
+}
+/* line 92, ../sass/common.sass */
+.content > div:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 97, ../sass/common.sass */
+select:-moz-focusring {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* line 103, ../sass/common.sass */
+.header {
+  background: #552d90;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 110, ../sass/common.sass */
+.header .navbar-brand {
+  background-image: url("../images/prizrr-logo-white.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin: auto;
+  width: 237px;
+  height: 31px;
+  background-size: cover;
+  text-indent: -9999px;
+  margin-right: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+/* line 124, ../sass/common.sass */
+.header .navbar-nav > li > a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  line-height: 36px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+/* line 134, ../sass/common.sass */
+.header .navbar-nav > li > a:hover {
+  background: none;
+  color: #fead2a;
+}
+/* line 138, ../sass/common.sass */
+.header .navbar-nav > li.account .icon {
+  width: 36px;
+  display: block;
+  height: 36px;
+  background: url("../images/prizrr-profile-default.png") no-repeat;
+  background-size: 36px;
+}
+
+/* line 146, ../sass/common.sass */
+.form-banner {
+  position: relative;
+  min-height: 400px;
+  background: url("../images/header-bg-orange.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+}
+/* line 152, ../sass/common.sass */
+.form-banner .form-container {
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 156, ../sass/common.sass */
+.form-banner .form-container p.lead {
+  font-weight: 700;
+}
+/* line 158, ../sass/common.sass */
+.form-banner .form-container .btn {
+  margin-bottom: 30px;
+}
+
+/* line 162, ../sass/common.sass */
+.ll h1 {
+  color: #552d90;
+  font-weight: 800;
+  margin: 0;
+  font-size: 48px;
+}
+/* line 167, ../sass/common.sass */
+.ll .form-questions {
+  max-width: 600px;
+  margin: 0 auto 15px;
+}
+/* line 170, ../sass/common.sass */
+.ll .form-questions select, .ll .form-questions input[type="text"] {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 40px;
+  font-size: 18px;
+}
+/* line 175, ../sass/common.sass */
+.ll .form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+/* line 178, ../sass/common.sass */
+.ll label {
+  position: absolute;
+  top: -13px;
+  left: 0;
+  font-size: 12px;
+  color: #999;
+  transition: all 0.1s linear;
+  opacity: 0;
+  font-weight: 600;
+}
+/* line 187, ../sass/common.sass */
+.ll label.on {
+  color: #4481C4;
+}
+/* line 189, ../sass/common.sass */
+.ll label.show {
+  top: -18px;
+  opacity: 1;
+}
+/* line 192, ../sass/common.sass */
+.ll .btn, .ll .btn-primary {
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 21px !important;
+  padding: 12px 50px !important;
+  background: #ee2f30 !important;
+  border: none !important;
+  border-radius: 28px !important;
+  white-space: normal;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+}
+/* line 204, ../sass/common.sass */
+.ll .btn:hover, .ll .btn-primary:hover {
+  color: white;
+  background: #d81213 !important;
+  text-shadow: rgba(255, 255, 255, 0.6) 0 1px 0;
+  top: 1px;
+  position: relative;
+}
+
+/* line 211, ../sass/common.sass */
+#mark {
+  max-width: 500px;
+  overflow: hidden;
+}
+/* line 214, ../sass/common.sass */
+#mark h3 {
+  color: white;
+  font-weight: 600;
+}
+/* line 217, ../sass/common.sass */
+#mark marquee {
+  float: left;
+  width: 100%;
+}
+/* line 220, ../sass/common.sass */
+#mark li {
+  color: white;
+  list-style: none;
+  margin-right: 10px;
+  display: inline;
+}
+/* line 225, ../sass/common.sass */
+#mark li b {
+  color: #552d90;
+}
+/* line 227, ../sass/common.sass */
+#mark .recent {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ee2f30;
+  font-weight: 600;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 236, ../sass/common.sass */
+.btn, .btn-primary {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 21px;
+  padding: 12px 50px !important;
+  background: #ee2f30 !important;
+  border: none !important;
+  border-radius: 28px;
+  white-space: normal;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+}
+/* line 248, ../sass/common.sass */
+.btn:hover, .btn-primary:hover {
+  color: white;
+  background: #d81213 !important;
+  text-shadow: rgba(255, 255, 255, 0.6) 0 1px 0;
+  top: 1px;
+  position: relative;
+}
+
+/* line 254, ../sass/common.sass */
+.btn-sm {
+  padding: 8px 20px !important;
+  font-size: 18px;
+  border-radius: 21px;
+}
+
+/* line 258, ../sass/common.sass */
+.btn-sq {
+  border-radius: 3px;
+}
+
+/* line 260, ../sass/common.sass */
+.btn-green {
+  background: #61c43e !important;
+}
+
+/* line 262, ../sass/common.sass */
+.btn-white {
+  background: white !important;
+  color: #61c43e !important;
+  text-shadow: none;
+}
+
+/* line 267, ../sass/common.sass */
+.form-container {
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+/* line 271, ../sass/common.sass */
+.form-container .form-header {
+  text-align: center;
+  background: #552d90;
+  padding: 15px 10px;
+  border-radius: 5px 5px 0 0;
+}
+/* line 276, ../sass/common.sass */
+.form-container .form-header h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+}
+/* line 281, ../sass/common.sass */
+.form-container .form-body {
+  padding: 20px 30px;
+}
+/* line 283, ../sass/common.sass */
+.form-container .form-footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 287, ../sass/common.sass */
+.body {
+  background: #f0f0f1;
+}
+/* line 289, ../sass/common.sass */
+.body h1 {
+  color: #552d90;
+  font-weight: 800;
+  margin: 0;
+  font-size: 48px;
+}
+/* line 294, ../sass/common.sass */
+.body h4 {
+  color: #552d90;
+  font-size: 28px;
+  margin-top: 25px;
+}
+/* line 298, ../sass/common.sass */
+.body h5 {
+  color: #552d90;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* line 304, ../sass/common.sass */
+.intro {
+  margin-bottom: 80px;
+}
+/* line 306, ../sass/common.sass */
+.intro p {
+  font-size: 18px;
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+/* line 311, ../sass/common.sass */
+.prize-teasers {
+  border: 3px solid #fead2a;
+  border-radius: 5px;
+  padding: 0 25px 15px;
+  background: white;
+  margin-bottom: 30px;
+}
+
+/* line 317, ../sass/common.sass */
+.prize-teaser {
+  clear: both;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+/* line 321, ../sass/common.sass */
+.prize-teaser:last-child {
+  border-bottom: none;
+}
+/* line 323, ../sass/common.sass */
+.prize-teaser img {
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+}
+/* line 327, ../sass/common.sass */
+.prize-teaser h5 {
+  margin: 0 0 10px;
+}
+
+/* line 329, ../sass/common.sass */
+.progress-buttons .btn {
+  margin-bottom: 15px;
+}
+
+/* line 331, ../sass/common.sass */
+.share-buttons {
+  padding-top: 20px;
+}
+/* line 333, ../sass/common.sass */
+.share-buttons .btn {
+  min-width: auto !important;
+  margin-bottom: 10px;
+}
+
+/* line 336, ../sass/common.sass */
+.btn-facebook, .btn-twitter {
+  border-radius: 25px;
+  margin-right: 10px;
+}
+/* line 339, ../sass/common.sass */
+.btn-facebook span, .btn-twitter span {
+  background: url("../images/social-sprite.png") no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 240px;
+}
+
+/* line 346, ../sass/common.sass */
+.btn-facebook {
+  background: #2a84c5 !important;
+}
+/* line 348, ../sass/common.sass */
+.btn-facebook:hover {
+  background: #2575b0 !important;
+  text-shadow: none;
+}
+
+/* line 351, ../sass/common.sass */
+.btn-twitter {
+  background: #02bbe7 !important;
+}
+/* line 353, ../sass/common.sass */
+.btn-twitter:hover {
+  background: #019ec2 !important;
+  text-shadow: none;
+}
+/* line 356, ../sass/common.sass */
+.btn-twitter span {
+  background-position: -30px 0;
+}
+
+/* line 358, ../sass/common.sass */
+.adsense-row {
+  padding: 15px;
+  text-align: center;
+}
+/* line 361, ../sass/common.sass */
+.adsense-row .adsense {
+  display: block;
+  margin: auto;
+  background: #ddd;
+  width: 728px;
+  height: 90px;
+  text-align: center;
+}
+/* line 368, ../sass/common.sass */
+.adsense-row .adsense span {
+  display: block;
+  font-size: 36px;
+  color: white;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 376, ../sass/common.sass */
+.card.search-filter {
+  padding: 10px 10px 0;
+}
+/* line 378, ../sass/common.sass */
+.card.search-filter .dropdown {
+  display: inline-block;
+  background: #f1f1f1;
+  color: #999;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+/* line 386, ../sass/common.sass */
+.card.search-filter .fa-search {
+  font-size: 24px;
+  color: #552d90;
+  position: relative;
+  top: 3px;
+}
+
+/* line 392, ../sass/common.sass */
+.progress {
+  height: 40px;
+  background: #d6d6d6;
+  border-radius: 20px;
+}
+/* line 396, ../sass/common.sass */
+.progress .progress-bar-warning {
+  background-color: #fda822;
+}
+
+/* line 399, ../sass/common.sass */
+.card {
+  background: white;
+  border-radius: 5px;
+  padding: 0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.2s;
+}
+/* line 408, ../sass/common.sass */
+.card .card-banner {
+  width: 95px;
+  height: 95px;
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  z-index: 999;
+}
+/* line 416, ../sass/common.sass */
+.card.ends-soon .card-banner {
+  background: url("../images/prizes/prize-tag-ends-soon.png") no-repeat;
+  background-size: 95px;
+}
+/* line 419, ../sass/common.sass */
+.card.very-popular .card-banner {
+  background: url("../images/prizes/prize-tag-very-popular.png") no-repeat;
+  background-size: 95px;
+}
+/* line 422, ../sass/common.sass */
+.card .card-header {
+  box-shadow: inset 0 -10px 10px -10px #000000;
+  min-height: 250px;
+  position: relative;
+}
+/* line 426, ../sass/common.sass */
+.card .card-header img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+/* line 429, ../sass/common.sass */
+.card .card-header .card-shadow {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+99 */
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+}
+/* line 440, ../sass/common.sass */
+.card .card-body {
+  padding: 0 15px 20px;
+}
+/* line 442, ../sass/common.sass */
+.card .card-body > p {
+  min-height: 120px;
+  overflow: scroll;
+}
+/* line 445, ../sass/common.sass */
+.card .md-48 {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+/* line 448, ../sass/common.sass */
+.card a:hover {
+  text-decoration: none !important;
+}
+/* line 450, ../sass/common.sass */
+.card:hover {
+  position: relative;
+  top: 1px;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+/* line 456, ../sass/common.sass */
+.card h3 {
+  font-weight: bold;
+}
+/* line 458, ../sass/common.sass */
+.card .time {
+  color: #999;
+}
+/* line 460, ../sass/common.sass */
+.card .time a {
+  color: #999;
+}
+/* line 462, ../sass/common.sass */
+.card .time a:hover {
+  color: #552d90;
+}
+/* line 464, ../sass/common.sass */
+.card .time .svg-inline--fa {
+  color: #ccc;
+}
+/* line 466, ../sass/common.sass */
+.card .btn {
+  min-width: 60%;
+}
+
+/* line 469, ../sass/common.sass */
+.footer {
+  clear: both;
+  overflow: auto;
+  padding: 50px 60px;
+  text-align: center;
+  background: #333333;
+}
+/* line 475, ../sass/common.sass */
+.footer .footer-logo {
+  width: 237px;
+  margin-bottom: 30px;
+}
+/* line 478, ../sass/common.sass */
+.footer p {
+  color: #999;
+  text-align: center;
+}
+/* line 481, ../sass/common.sass */
+.footer a {
+  color: white;
+}
+/* line 483, ../sass/common.sass */
+.footer .social {
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0;
+}
+/* line 488, ../sass/common.sass */
+.footer .social li {
+  display: inline-block;
+}
+/* line 490, ../sass/common.sass */
+.footer .social li a {
+  display: block;
+  opacity: 0.3;
+}
+/* line 493, ../sass/common.sass */
+.footer .social li a span {
+  background: url("../images/social-sprite.png") no-repeat 0 0;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 480px;
+}
+/* line 500, ../sass/common.sass */
+.footer .social li a:hover {
+  opacity: 1;
+}
+/* line 502, ../sass/common.sass */
+.footer .social li.twitter a span {
+  background-position: -60px 0;
+}
+/* line 504, ../sass/common.sass */
+.footer .social li.instagram a span {
+  background-position: -240px 0;
+}
+
+/* line 510, ../sass/common.sass */
+#privacy h1 {
+  font-size: 30px;
+  color: #552d90;
+  text-shadow: none;
+  font-weight: 500;
+}
+/* line 515, ../sass/common.sass */
+#privacy h2 {
+  font-size: 20px;
+  color: #552d90;
+  font-weight: 500;
+  border-bottom: 3px solid #552d90;
+  padding-bottom: 10px;
+  margin: 20px 0 10px;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  /* line 527, ../sass/common.sass */
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 533, ../sass/common.sass */
+  .body {
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 541, ../sass/common.sass */
+  .navbar-toggle {
+    margin-right: 0;
+  }
+  /* line 543, ../sass/common.sass */
+  .navbar-toggle .icon-bar {
+    background: white;
+  }
+
+  /* line 546, ../sass/common.sass */
+  .navbar-collapse li, .navbar-collapse a {
+    text-align: left;
+  }
+
+  /* line 548, ../sass/common.sass */
+  .adsense-row {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 554, ../sass/common.sass */
+  .body {
+    padding-top: 30px;
+  }
+
+  /* line 556, ../sass/common.sass */
+  .header .row-inset {
+    padding: 0;
+  }
+
+  /* line 558, ../sass/common.sass */
+  .container > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 562, ../sass/common.sass */
+  .form-banner h1 {
+    font-size: 28px;
+  }
+
+  /* line 564, ../sass/common.sass */
+  .form-container {
+    padding: 0;
+    background-size: contain;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 570, ../sass/common.sass */
+  .form-container .form-body {
+    padding: 15px;
+  }
+
+  /* line 572, ../sass/common.sass */
+  .adsense-row .adsense {
+    width: 234px;
+    height: 60px;
+  }
+  /* line 575, ../sass/common.sass */
+  .adsense-row .adsense span {
+    font-size: 14px;
+  }
+
+  /* line 579, ../sass/common.sass */
+  #privacy h1 {
+    font-size: 28px;
+  }
+  /* line 581, ../sass/common.sass */
+  #privacy h2 {
+    font-size: 18px;
+  }
+}

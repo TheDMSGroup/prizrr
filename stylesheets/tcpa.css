@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700");
+/* line 14, ../sass/tcpa.sass */
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 19, ../sass/tcpa.sass */
+body {
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  background: white;
+  color: #444;
+  font-size: 14px;
+}
+
+/* line 25, ../sass/tcpa.sass */
+p, ul, li {
+  color: #666;
+  line-height: 1.5em;
+}
+
+/* line 29, ../sass/tcpa.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 32, ../sass/tcpa.sass */
+li {
+  line-height: 1.5em;
+}
+
+/* line 35, ../sass/tcpa.sass */
+a {
+  color: #44bb6d;
+  cursor: pointer;
+}
+/* line 38, ../sass/tcpa.sass */
+a:hover {
+  color: #369657;
+  text-decoration: none;
+}
+
+/* line 42, ../sass/tcpa.sass */
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+/* line 47, ../sass/tcpa.sass */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* line 51, ../sass/tcpa.sass */
+h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+/* line 55, ../sass/tcpa.sass */
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 59, ../sass/tcpa.sass */
+select, input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* line 67, ../sass/tcpa.sass */
+.left {
+  float: left;
+}
+
+/* line 70, ../sass/tcpa.sass */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+/* line 75, ../sass/tcpa.sass */
+.container > div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 80, ../sass/tcpa.sass */
+.content > div {
+  margin-bottom: 40px;
+  clear: both;
+}
+/* line 83, ../sass/tcpa.sass */
+.content > div:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 88, ../sass/tcpa.sass */
+select:-moz-focusring {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* line 94, ../sass/tcpa.sass */
+.header {
+  background: white;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 101, ../sass/tcpa.sass */
+.header .header-brand a {
+  background-image: url("../images/rent2ownadvisor-logo.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin: auto;
+  width: 307px;
+  height: 44px;
+  text-indent: -9999px;
+  margin-right: 10px;
+}
+
+/* line 113, ../sass/tcpa.sass */
+.form-banner {
+  padding: 20px 60px;
+  background: white url(../images/rent2own-hero.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  min-height: 400px;
+}
+/* line 122, ../sass/tcpa.sass */
+.form-banner h1 {
+  color: white;
+  font-weight: normal;
+  text-align: left;
+  margin: 0;
+  font-size: 48px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* line 130, ../sass/tcpa.sass */
+.form-container {
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+/* line 134, ../sass/tcpa.sass */
+.form-container .form-header {
+  text-align: center;
+  background: #44bb6d;
+  padding: 15px 10px;
+  border-radius: 5px 5px 0 0;
+}
+/* line 139, ../sass/tcpa.sass */
+.form-container .form-header h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+}
+/* line 144, ../sass/tcpa.sass */
+.form-container .form-body {
+  padding: 20px 30px;
+}
+/* line 146, ../sass/tcpa.sass */
+.form-container .form-footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 150, ../sass/tcpa.sass */
+.footer {
+  clear: both;
+  overflow: auto;
+  padding: 30px 60px;
+  text-align: center;
+}
+/* line 155, ../sass/tcpa.sass */
+.footer .footer-logo {
+  width: 235px;
+}
+/* line 157, ../sass/tcpa.sass */
+.footer p {
+  color: #999;
+  text-align: center;
+}
+
+/* line 164, ../sass/tcpa.sass */
+#privacy h1 {
+  font-size: 30px;
+  color: #44bb6d;
+  text-shadow: none;
+  font-weight: 500;
+}
+/* line 169, ../sass/tcpa.sass */
+#privacy h2 {
+  font-size: 20px;
+  color: #44bb6d;
+  font-weight: 500;
+  border-bottom: 3px solid #44bb6d;
+  padding-bottom: 10px;
+  margin: 20px 0 10px;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  /* line 181, ../sass/tcpa.sass */
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 187, ../sass/tcpa.sass */
+  .body {
+    padding: 30px;
+  }
+
+  /* line 189, ../sass/tcpa.sass */
+  .container > div {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 196, ../sass/tcpa.sass */
+  .form-container {
+    margin-top: -68px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 200, ../sass/tcpa.sass */
+  .form-banner {
+    background-size: cover;
+    display: inline-block;
+    padding: 0 !important;
+  }
+  /* line 204, ../sass/tcpa.sass */
+  .form-banner h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 212, ../sass/tcpa.sass */
+  .container > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 215, ../sass/tcpa.sass */
+  .form-banner {
+    background-size: contain;
+  }
+  /* line 217, ../sass/tcpa.sass */
+  .form-banner h1 {
+    font-size: 28px;
+  }
+
+  /* line 219, ../sass/tcpa.sass */
+  .form-container {
+    padding: 0;
+    background-size: contain;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 225, ../sass/tcpa.sass */
+  .form-container .form-body {
+    padding: 15px;
+  }
+
+  /* line 230, ../sass/tcpa.sass */
+  #privacy h1 {
+    font-size: 28px;
+  }
+  /* line 232, ../sass/tcpa.sass */
+  #privacy h2 {
+    font-size: 18px;
+  }
+}

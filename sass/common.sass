@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,800')
+
+$black: #000
+$gray: #9ea3a4
+$dk-gray: #333333
+$green: #61c43e
+$orange: #fead2a
+$purple: #552d90
+$red: #ee2f30
+
+$primary: $purple !default
+$primary-md: darken($primary, 10%) !default
+$secondary: $red
+$secondary-md: darken($secondary, 10%) !default
+
+
+// -------------------------- COMMON --------------------------------------------------
+
+// extendables
+.uppercase
+  text-transform: uppercase
+  letter-spacing: 1px
+
+// common
+body
+  font-family: "Work Sans", Helvetica, Arial, sans-serif
+  background: white
+  color: #444
+  font-size: 14px
+
+p, ul, li
+  color: #666
+  line-height: 1.5em
+
+img
+  max-width: 100%
+
+li
+  line-height: 1.5em
+
+a
+  color: $primary
+  cursor: pointer
+  &:hover
+    color: $primary-md
+    text-decoration: none
+
+h1
+  font-size: 36px
+  font-weight: normal
+  margin-bottom: 10px
+
+h2
+  font-size: 28px
+  margin-bottom: 10px
+  font-weight: bold
+  color: $primary
+
+h3
+  font-size: 21px
+  margin-bottom: 10px
+
+h4
+  font-size: 16px
+  font-weight: bold
+
+select, input[type="text"]
+  border: 1px solid #ccc
+  border-radius: 3px
+  padding: 5px 10px
+  box-sizing: border-box
+  font-family: "Work Sans", Helvetica, Arial, sans-serif
+  font-size: 16px
+
+.left
+  float: left
+
+.container
+  width: 100%
+  max-width: 100%
+  padding: 0
+
+.row-inset
+  max-width: 1100px
+  margin: auto
+  padding: 0 15px
+
+.content
+  > div
+    margin-bottom: 40px
+    clear: both
+    &:after
+      content: ""
+      clear: both
+      display: block
+
+select:-moz-focusring
+  outline: none
+  color: transparent
+  text-shadow: 0 0 0 #000
+
+// header
+.header
+  background: $primary
+  color: white
+  padding-top: 15px
+  padding-bottom: 15px
+  text-align: center
+  overflow: hidden
+  .navbar-brand
+    background-image: url('../images/prizrr-logo-white.png')
+    background-repeat: no-repeat
+    display: block
+    float: left
+    margin: auto
+    width: 237px
+    height: 31px
+    background-size: cover
+    text-indent: -9999px
+    margin-right: 10px
+    margin-top: 10px
+    box-sizing: border-box
+  .navbar-nav>li
+    >a
+      color: white
+      font-size: 18px
+      font-weight: 600
+      text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+      line-height: 36px
+      padding: 10px 15px
+      border-radius: 5px
+      margin-right: 5px
+      box-sizing: border-box
+      &:hover
+        background: none
+        color: $orange
+    &.account
+      .icon
+        width: 36px
+        display: block
+        height: 36px
+        background: url('../images/prizrr-profile-default.png') no-repeat
+        background-size: 36px
+
+// form
+.form-banner
+  position: relative
+  min-height: 400px
+  background: url('../images/header-bg-orange.jpg') center center no-repeat
+  background-size: cover
+  padding-top: 40px
+  .form-container
+    padding: 40px 20px
+    text-align: center
+    margin-bottom: 30px
+    p.lead
+      font-weight: 700
+    .btn
+      margin-bottom: 30px
+
+.ll
+  h1
+    color: $primary
+    font-weight: 800
+    margin: 0
+    font-size: 48px
+  .form-questions
+    max-width: 600px
+    margin: 0 auto 15px
+    select, input[type="text"]
+      width: 100%
+      margin-bottom: 15px
+      height: 40px
+      font-size: 18px
+  .form-group
+    position: relative
+    margin-bottom: 15px
+  label
+    position: absolute
+    top: -13px
+    left: 0
+    font-size: 12px
+    color: #999
+    transition: all 0.1s linear
+    opacity: 0
+    font-weight: 600
+  label.on
+    color: #4481C4
+  label.show
+    top: -18px
+    opacity: 1
+  .btn, .btn-primary
+    font-weight: 600 !important
+    letter-spacing: 1px
+    color: white
+    font-size: 21px !important
+    padding: 12px 50px !important
+    background: $secondary !important
+    border: none !important
+    border-radius: 28px !important
+    white-space: normal
+    cursor: pointer
+    text-shadow: rgba(0,0,0,0.3) 0 -1px 0
+    &:hover
+      color: white
+      background: $secondary-md !important
+      text-shadow: rgba(255,255,255,0.6) 0 1px 0
+      top: 1px
+      position: relative
+
+#mark
+  max-width: 500px
+  overflow: hidden
+  h3
+    color: white
+    font-weight: 600
+  marquee
+    float: left
+    width: 100%
+  li
+    color: white
+    list-style: none
+    margin-right: 10px
+    display: inline
+    b
+      color: $primary
+  .recent
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: $red
+    font-weight: 600
+    display: inline
+    float: left
+    margin-right: 10px
+
+.btn, .btn-primary
+  font-weight: 600
+  letter-spacing: 1px
+  color: white
+  font-size: 21px
+  padding: 12px 50px !important
+  background: $secondary !important
+  border: none !important
+  border-radius: 28px
+  white-space: normal
+  cursor: pointer
+  text-shadow: rgba(0,0,0,0.3) 0 -1px 0
+  &:hover
+    color: white
+    background: $secondary-md !important
+    text-shadow: rgba(255,255,255,0.6) 0 1px 0
+    top: 1px
+    position: relative
+.btn-sm
+  padding: 8px 20px !important
+  font-size: 18px
+  border-radius: 21px
+.btn-sq
+  border-radius: 3px
+.btn-green
+  background: $green !important
+.btn-white
+  background: white !important
+  color: $green !important
+  text-shadow: none
+
+.form-container
+  background: white
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+  border-radius: 5px
+  .form-header
+    text-align: center
+    background: $primary
+    padding: 15px 10px
+    border-radius: 5px 5px 0 0
+    h2
+      color: white
+      font-weight: normal
+      font-size: 20px
+      margin: 0
+  .form-body
+    padding: 20px 30px
+  .form-footer
+    text-align: center
+    margin: 20px 0
+
+.body
+  background: #f0f0f1
+  h1
+    color: $primary
+    font-weight: 800
+    margin: 0
+    font-size: 48px
+  h4
+    color: $primary
+    font-size: 28px
+    margin-top: 25px
+  h5
+    color: $primary
+    font-size: 18px
+    font-weight: 600
+    margin-bottom: 30px
+
+.intro
+  margin-bottom: 80px
+  p
+    font-size: 18px
+    max-width: 80%
+    margin: 10px auto
+
+.prize-teasers
+  border: 3px solid $orange
+  border-radius: 5px
+  padding: 0 25px 15px
+  background: white
+  margin-bottom: 30px
+.prize-teaser
+  clear: both
+  padding: 15px 0
+  border-bottom: 1px solid #ddd
+  &:last-child
+    border-bottom: none
+  img
+    width: 80px
+    float: left
+    margin-right: 10px
+  h5
+    margin: 0 0 10px
+.progress-buttons .btn
+  margin-bottom: 15px
+.share-buttons
+  padding-top: 20px
+  .btn
+    min-width: auto !important
+    margin-bottom: 10px
+.btn-facebook, .btn-twitter
+  border-radius: 25px
+  margin-right: 10px
+  span
+    background: url('../images/social-sprite.png') no-repeat 0 0
+    width: 30px
+    height: 30px
+    display: inline-block
+    vertical-align: middle
+    background-size: 240px
+.btn-facebook
+  background: #2a84c5 !important
+  &:hover
+    background: #2575b0 !important
+    text-shadow: none
+.btn-twitter
+  background: #02bbe7 !important
+  &:hover
+    background: #019ec2 !important
+    text-shadow: none
+  span
+    background-position: -30px 0
+.adsense-row
+  padding: 15px
+  text-align: center
+  .adsense
+    display: block
+    margin: auto
+    background: #ddd
+    width: 728px
+    height: 90px
+    text-align: center
+    span
+      display: block
+      font-size: 36px
+      color: white
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+
+.card.search-filter
+  padding: 10px 10px 0
+  .dropdown
+    display: inline-block
+    background: #f1f1f1
+    color: #999
+    padding: 10px 15px
+    border-radius: 5px
+    margin-left: 5px
+    margin-bottom: 10px
+  .fa-search
+    font-size: 24px
+    color: $primary
+    position: relative
+    top: 3px
+
+.progress
+  height: 40px
+  background: #d6d6d6
+  border-radius: 20px
+  .progress-bar-warning
+    background-color: #fda822
+
+.card
+  background: white
+  border-radius: 5px
+  padding: 0
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+  text-align: center
+  margin-bottom: 20px
+  position: relative
+  transition: all 0.2s
+  .card-banner
+    width: 95px
+    height: 95px
+    display: block
+    position: absolute
+    top: -3px
+    left: -3px
+    z-index: 999
+  &.ends-soon .card-banner
+    background: url('../images/prizes/prize-tag-ends-soon.png') no-repeat
+    background-size: 95px
+  &.very-popular .card-banner
+    background: url('../images/prizes/prize-tag-very-popular.png') no-repeat
+    background-size: 95px
+  .card-header
+    box-shadow: inset 0 -10px 10px -10px #000000
+    min-height: 250px
+    position: relative
+    img
+      border-top-right-radius: 5px
+      border-top-left-radius: 5px
+    .card-shadow
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+99 */
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%)
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%)
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 )
+      position: absolute
+      display: block
+      height: 30px
+      width: 100%
+      bottom: 0
+  .card-body
+    padding: 0 15px 20px
+    > p
+      min-height: 120px
+      overflow: scroll
+  .md-48
+    font-size: 48px
+    margin-bottom: 5px
+  a:hover
+    text-decoration: none !important
+  &:hover
+    position: relative
+    top: 1px
+    -webkit-transform: scale(1.05)
+    -ms-transform: scale(1.05)
+    transform: scale(1.05)
+  h3
+    font-weight: bold
+  .time
+    color: #999
+    a
+      color: #999
+      &:hover
+        color: $primary
+    .svg-inline--fa
+      color: #ccc
+  .btn
+    min-width: 60%
+
+.footer
+  clear: both
+  overflow: auto
+  padding: 50px 60px
+  text-align: center
+  background: $dk-gray
+  .footer-logo
+    width: 237px
+    margin-bottom: 30px
+  p
+    color: #999
+    text-align: center
+  a
+    color: white
+  .social
+    list-style: none
+    text-align: center
+    margin-top: 20px
+    padding: 0
+    li
+      display: inline-block
+      a
+        display: block
+        opacity: .3
+        span
+          background: url('../images/social-sprite.png') no-repeat 0 0
+          width: 60px
+          height: 60px
+          display: inline-block
+          vertical-align: middle
+          background-size: 480px
+        &:hover
+          opacity: 1
+    li.twitter a span
+      background-position: -60px 0
+    li.instagram a span
+      background-position: -240px 0
+
+// privacy and terms
+
+#privacy
+  h1
+    font-size: 30px
+    color: $primary
+    text-shadow: none
+    font-weight: 500
+  h2
+    font-size: 20px
+    color: $primary
+    font-weight: 500
+    border-bottom: 3px solid $primary
+    padding-bottom: 10px
+    margin: 20px 0 10px
+    text-align: left
+
+//////////////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////
+
+@media (max-width: 1200px)
+  .container
+    max-width: 100%
+
+//bootstrap breakpoint
+
+@media (min-width: 992px)
+  .body
+    padding: 30px
+
+// Responsive: Landscape phone to desktop/tablet
+
+@media (min-width: 769px)
+
+@media (max-width: 768px)
+  .navbar-toggle
+    margin-right: 0
+    .icon-bar
+      background: white
+  .navbar-collapse
+    li, a
+      text-align: left
+  .adsense-row
+    padding: 15px 0
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 480px)
+  .body
+    padding-top: 30px
+  .header .row-inset
+    padding: 0
+  .container > div
+    padding-left: 15px
+    padding-right: 15px
+  .form-banner
+    h1
+      font-size: 28px
+  .form-container
+    padding: 0
+    background-size: contain
+    margin-bottom: 20px
+    margin-left: -15px
+    margin-right: -15px
+    .form-body
+      padding: 15px
+  .adsense-row .adsense
+    width: 234px
+    height: 60px
+    span
+      font-size: 14px
+  // privacy
+  #privacy
+    h1
+      font-size: 28px
+    h2
+      font-size: 18px
