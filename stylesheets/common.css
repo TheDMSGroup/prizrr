@@ -1,5 +1,134 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600,800");
-/* line 20, ../sass/common.sass */
+
+/*$purple: #552d90
+$accessible-orange: #F2A762;
+*/
+
+/************ ACCESSIBILITY STUFF ***********************/
+
+:root {
+  --primary-color: #552d90;
+  --secondary-color: #552d90;
+  --font-color: #333;
+  --bg-color: white;
+  --heading-color: #552d90;
+  --link-color: #552d90;
+  --link-border: none;
+  --font-size: 1em;
+}
+
+[data-theme="dark"] {
+  --primary-color: #F2A762;
+  --secondary-color: #ddd;
+  --font-color: #F2A762;
+  --bg-color: #181818;
+  --heading-color: #F2A762;
+  --link-color: white;
+  --link-border: 3px solid #F2A762;
+}
+
+[data-font="bigger"] {
+  --font-size: 1.15em;
+}
+[data-font="smaller"] {
+  --font-size: 0.95em;
+}
+
+.font-control {
+  padding: 5px;
+  color: var(--primary-color) !important;
+}
+
+/* Theme variables */
+body, .body, .card {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-size: var(--font-size);
+}
+
+p, ul, li {
+  color: var(--font-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2, h3, h4, h5 {
+  color: var(--heading-color);
+}
+
+a {
+    color: var(--link-color);
+    border: var(--link-border);
+}
+.btn {
+  border: var(--link-border) !important;
+}
+
+/*Simple css to style the dark mode checkbox like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: $green;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/************ END ACCESSIBILITY STUFF ***********************/
+
+
 .uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -8,14 +137,10 @@
 /* line 25, ../sass/common.sass */
 body {
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
-  background: white;
-  color: #444;
-  font-size: 14px;
 }
 
 /* line 31, ../sass/common.sass */
 p, ul, li {
-  color: #666;
   line-height: 1.5em;
 }
 
@@ -31,12 +156,10 @@ li {
 
 /* line 41, ../sass/common.sass */
 a {
-  color: #552d90;
   cursor: pointer;
 }
 /* line 44, ../sass/common.sass */
 a:hover {
-  color: #3e2169;
   text-decoration: none;
 }
 
@@ -52,7 +175,6 @@ h2 {
   font-size: 28px;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #552d90;
 }
 
 /* line 59, ../sass/common.sass */
@@ -369,26 +491,19 @@ select:-moz-focusring {
   margin: 20px 0;
 }
 
-/* line 287, ../sass/common.sass */
-.body {
-  background: #f0f0f1;
-}
 /* line 289, ../sass/common.sass */
 .body h1 {
-  color: #552d90;
   font-weight: 800;
   margin: 0;
   font-size: 48px;
 }
 /* line 294, ../sass/common.sass */
 .body h4 {
-  color: #552d90;
   font-size: 28px;
   margin-top: 25px;
 }
 /* line 298, ../sass/common.sass */
 .body h5 {
-  color: #552d90;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -715,14 +830,12 @@ select:-moz-focusring {
 /* line 510, ../sass/common.sass */
 #privacy h1 {
   font-size: 30px;
-  color: #552d90;
   text-shadow: none;
   font-weight: 500;
 }
 /* line 515, ../sass/common.sass */
 #privacy h2 {
   font-size: 20px;
-  color: #552d90;
   font-weight: 500;
   border-bottom: 3px solid #552d90;
   padding-bottom: 10px;
